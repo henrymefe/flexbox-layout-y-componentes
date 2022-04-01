@@ -1,0 +1,30 @@
+.playerPlayback{
+display: flex;
+align-items: center;
+/* border: 1px solid red; */
+gap: .5rem;
+
+}
+
+
+.playerPlayback-slider{
+/* border: 1px solid red; */
+flex: 1;
+/* flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 1; */
+
+
+}
+/* ALINEAR EJE: -- (principal: align-items)
+           EJE: | (transversal) */
+
+
+.playerPlayback-progressTime{
+/* border: 1px solid yellow; */
+font: var(--small);
+line-height: 1;
+position: relative;
+top: 1.5px;
+
+}

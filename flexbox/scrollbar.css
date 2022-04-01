@@ -1,0 +1,36 @@
+::-webkit-scrollbar{
+  /* background: red; */
+  inline-size: .5rem;
+  block-size: .5rem;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--gray50);
+}
+
+/* ::-webkit-scrollbar-button{
+  background:blue ;
+} */
+
+::-webkit-scrollbar-thumb{
+  background: var(--gray60);
+}
+
+
+
+/* ::-webkit-scrollbar-thumb:horizontal{
+  background: pink;
+}
+::-webkit-scrollbar-thumb:vertical{
+  background: green;
+} */
+/*
+.layout-sidebar::-webkit-scrollbar-thumb:vertical{
+  background: var(--gray50);
+
+}
+
+.layout-sidebar::-webkit-scrollbar-track:vertical{
+  background: var(--gray60); */
+
+}

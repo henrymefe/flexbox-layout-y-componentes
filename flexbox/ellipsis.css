@@ -1,0 +1,16 @@
+.ellipsis{
+  overflow: hidden;
+}
+
+.ellipsis > *{
+  /* border: 1px solid yellow; */
+  /* 1 */
+  display: block;
+  /* 2 */
+  white-space: nowrap;
+  /* 3 */
+  overflow: hidden;
+  /* 4 */
+  text-overflow: ellipsis;
+
+}

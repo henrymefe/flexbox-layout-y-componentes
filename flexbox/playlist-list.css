@@ -1,0 +1,152 @@
+.playlistList{
+  flex-shrink: 0;
+
+}
+
+.playlistList-top{
+padding-block-start: 0.5rem;
+padding-block-end: 0.5rem;
+margin-block-end: 1rem;
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+align-items: center;
+}
+.playlistList-container{
+display: flex;
+overflow-x: auto;
+gap: 1rem;
+
+}
+
+
+.playlistList-container > *{
+   /* flex-shrink: 0; */
+   gap: 1rem;
+   /* border: 1px solid red; */
+
+
+
+}
+
+.playlistList-title{
+  font: var(--headline2);
+  color: var(--white);
+  margin: 0;
+
+}
+
+/* PLAYLIST A */
+.playlistA {
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: .25rem;
+  background: var(--gray40);
+  box-sizing: border-box;
+  transition: .3s background;
+  flex-shrink: 0;
+
+}
+
+.playlistA:hover .playlistA-cover button,
+.playlistA:focus-within .playlistA-cover button {
+  /* display: block; */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.playlistA:hover,
+.playlistA:focus-within {
+  cursor: pointer;
+  background: var(--gray30);
+}
+
+.playlistA-cover img {
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: auto;
+
+
+}
+
+.playlistA-cover {
+  position: relative;
+  border-radius: .75rem;
+  overflow: hidden;
+  margin-block-end: 1rem;
+}
+
+.playlistA button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  /* display: none; */
+  opacity: 0;
+  will-change: opacity, transform;
+  transform: translateY(.5rem);
+  transition: .3s opacity, .3s transform;
+}
+
+.playlistA-title {
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+
+}
+
+.playlistA-description {
+  font: var(--baseFont);
+  color: var(--gray10);
+  margin: 0;
+
+}
+
+/* PLAYLIST B */
+
+/* padre */
+.playlistB {
+  display: flex;
+  inline-size: 17.5rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .1);
+  transition: .3s background;
+  flex-shrink: 0;
+
+}
+
+.playlistB:hover,
+.playlistB:focus-within {
+  background: rgba(255, 255, 255, .2);
+
+}
+
+.playlistB-details {
+  display: flex;
+  padding: 1rem;
+  gap: .5rem;
+  align-items: center;
+  padding: 0;
+}
+
+.playlistB-cover img {
+  vertical-align: middle;
+  inline-size: 4.75rem;
+  block-size: 4.75rem;
+}
+
+.playlistB-title {
+  font: var(--baseFontBold);
+  color: var(--white);
+  margin: 0;
+}
+
+.playlistB-controls {
+  opacity: 0;
+}
+
+.playlistB:hover .playlistB-controls,
+.playlistB:focus-within .playlistB-controls {
+  opacity: 1;
+  transition: .3s;
+}

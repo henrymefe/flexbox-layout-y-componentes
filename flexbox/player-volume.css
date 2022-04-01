@@ -1,0 +1,26 @@
+/* padre */
+.playerVolume{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* hijo 1*/
+.playerVolume-slider
+{
+  flex: 1;
+  /* border: 1px solid yellow; */
+  inline-size: 6rem;
+  /* align-self: center; */
+
+}
+
+
+.player-playerVolume{
+display: flex;
+justify-content: flex-end;
+
+}
+
